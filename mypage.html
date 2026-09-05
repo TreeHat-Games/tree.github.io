@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+	<style>
+		/* Change these colors if you want a different look. */
+		:root {
+			--green: #11c586;
+			--light-green: #1cf4c2;
+			--cream: #000000;
+			--dark: #159e2b;
+			--gray: #7b7d7d;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			margin: 0;
+			color: var(--dark);
+			background: var(--cream);
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+		}
+
+		.container {
+			width: min(900px, calc(100% - 40px));
+			margin: 0 auto;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 24px 0;
+		}
+
+		.logo { color: var(--green); font-size: 20px; font-weight: bold; }
+		nav a { margin-left: 20px; color: var(--dark); text-decoration: none; }
+		nav a:hover { color: var(--green); }
+
+		.hero {
+			margin: 40px 0;
+			padding: 70px 40px;
+			text-align: center;
+			background: var(--light-green);
+			border-radius: 12px;
+		}
+
+		h1, h2, h3, .logo, .button {
+			font-family: "Press Start 2P", sans-serif;
+		}
+		.hero p { max-width: 520px; margin: 0 auto 25px; color: var(--gray); font-size: 18px; }
+
+		.button {
+			display: inline-block;
+			padding: 12px 20px;
+			color: white;
+			background: var(--green);
+			border-radius: 6px;
+			text-decoration: none;
+		}
+
+		.button:hover { background: #174534; }
+		section { padding: 35px 0; }
+		.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+		.card { padding: 22px; background: white; border: 1px solid #dce5df; border-radius: 8px; }
+		.card h3 { margin-top: 0; color: var(--green); }
+		.card p, .about p { color: var(--gray); }
+		footer { margin-top: 35px; padding: 25px 0; color: var(--gray); border-top: 1px solid #dce5df; text-align: center; }
+
+		@media (max-width: 650px) {
+			header { display: block; text-align: center; }
+			nav { margin-top: 12px; }
+			nav a { margin: 0 8px; }
+			.hero { padding: 50px 20px; }
+			.cards { grid-template-columns: 1fr; }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<!-- EDIT THIS: replace "Your Name" with your name or website name. -->
+			<div class="logo">print("Hello Tree")</div>
+			<nav>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero">
+				<!-- EDIT THESE: change the heading and description to your own words. -->
+				<h1>Tree</h1>
+				<p>Developer, Content Creator, Artist, Nintedo Glazer</p>
+				<a class="button" href="#about">Learn more</a>
+			</section>
+
+			<section id="about" class="about">
+				<h2>About me</h2>
+				<!-- EDIT THIS: write a few sentences about yourself here. -->
+				<p>I am a person who enjoys learning new things and making useful projects. This is a good place to introduce yourself, your work, or your hobbies.</p>
+			</section>
+
+			<section>
+				<h2>My interests</h2>
+				<div class="cards">
+					<!-- EDIT THESE: change each title and description. Copy a card if you need more. -->
+					<article class="card">
+						<h3>Games</h3>
+						<p>I like to play and create games.</p>
+					</article>
+					<article class="card">
+						<h3>Interest two</h3>
+						<p>Write a short description here.</p>
+					</article>
+					<article class="card">
+						<h3>Interest three</h3>
+						<p>Write a short description here.</p>
+					</article>
+				</div>
+			</section>
+
+            </section>
+                <h2>My Games</h2>
+                <p>Dont worry, they are more coming soon!</p>
+                <iframe frameborder="0" src="https://itch.io/embed/3405084?bg_color=ffffff&amp;fg_color=000000&amp;link_color=23ffbf&amp;border_color=6aaf9b" width="552" height="167"><a href="https://tree-hat.itch.io/cubix-the-shapely-hero">Cubix The Shapely Hero by Tree</a></iframe>
+            </section>
+
+			<section id="contact">
+				<h2>Contact</h2>
+				<!-- EDIT THIS: replace the email address with your own. -->
+				<p class="about">You can reach me at <a href="mailto:you@example.com">you@example.com</a>.</p>
+			</section>
+		</main>
+
+		<footer>Made by Your Name</footer>
+	</div>
+</body>
+</html>
